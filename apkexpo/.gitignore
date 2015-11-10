@@ -1,0 +1,5 @@
+/build
+/libs
+/src/lib_inject/lib
+/src/lib_inject/obj
+/*.apk

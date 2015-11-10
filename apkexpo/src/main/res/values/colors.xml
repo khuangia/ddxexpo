@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cor_primary">#3F51B5</color>
+    <color name="cor_primary_dark">#303F9F</color>
+    <color name="cor_accent">#FF4081</color>
+    <color name="cor_dim_grey">#696969</color>
+    <color name="cor_gray">#DBDBDB</color>
+    <color name="cor_floral_white">#FFFAF0</color>
+    <color name="cor_real_black">#000000</color>
+    <color name="cor_not_very_black">#444444</color>
+    <color name="cor_grey">#808080</color>
+    <color name="cor_green">#009100</color>
+    <color name="cor_dim_green">#00A000</color>
+    <color name="cor_red">#CE0000</color>
+    <color name="cor_dim_red">#EA0000</color>
+</resources>

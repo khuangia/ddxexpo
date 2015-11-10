@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/id_activity_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:name="com.kr.apkexpo.Fragment_Title" />
+
+    <include
+        android:id="@+id/id_activity_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/layout_footer" />
+
+    <FrameLayout
+        android:id="@+id/id_activity_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/id_activity_footer"
+        android:layout_below="@id/id_activity_title"
+        />
+
+</RelativeLayout>

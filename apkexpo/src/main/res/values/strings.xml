@@ -1,0 +1,57 @@
+<resources>
+    <string name="str_app_name">DdxExpo</string>
+    <string name="str_tar_package">com.efun.android.ddx</string>
+    <string name="str_app_title">大侠总动员</string>
+    <string name="str_x_man_not_ready">没有可修改的英雄</string>
+    <string name="str_x_man_get_ready">向左滑动修改</string>
+    <string name="str_x_man_footer_title">人物</string>
+    <string name="str_x_log_footer_title">日志</string>
+    <string name="str_x_man_strong_desc">已加强</string>
+    <string name="str_x_man_normal_desc">普通</string>
+    <string name="str_info_config_err">: 配置文件异常, 考虑重装游戏\n</string>
+    <string name="str_info_config_ok">: 配置文件正常\n</string>
+    <string name="str_info_chk_config">\n检查游戏配置文件\n</string>
+    <string name="str_info_valid_ok">\n校验完成, 可以使用人物加强功能\n</string>
+    <string name="str_info_valid_start">开始校验手机与游戏的环境\n</string>
+    <string name="str_info_chk_root">检查Root 权限\n</string>
+    <string name="str_info_chk_root_ok">: 可以获取Root 权限\n</string>
+    <string name="str_info_chk_root_failed">: 不能获取Root 权限\n</string>
+    <string name="str_info_chk_pkg">\n获取大侠总动员安装包信息\n</string>
+    <string name="str_info_chk_pkg_ok">: 安装包存在\n</string>
+    <string name="str_info_chk_pkg_err">: 找不到安装包\n</string>
+    <string name="str_info_chk_account">\n查询游戏信息\n</string>
+    <string name="str_info_chk_account_failed">: 读取不成功\n</string>
+    <string name="str_info_chk_account_user">"用户名: "</string>
+    <string name="str_info_chk_account_pwd">"密码: "</string>
+    <string name="str_info_chk_mod_history">\n本地文件修改\n</string>
+    <string name="str_info_basic_mod_already">: 上次修改 - </string>
+    <string name="str_info_better_copy_drop">: 增强本地副本掉落概率\n</string>
+    <string name="str_info_better_shop">: 开启永久奇珍阁\n</string>
+    <string name="str_info_better_union_lv">: 置顶门派等级\n</string>
+    <string name="str_info_better_copy_lv">: 去除副本等级限制\n</string>
+    <string name="str_info_better_senity_word">: 去除本地敏感词过滤\n</string>
+    <string name="str_to_be_strong">加强</string>
+    <string name="str_find_hero_head_err">查找英雄头像时出现错误\n</string>
+    <string name="str_x_man_go_back">还原</string>
+    <string name="str_info_has_restored">"还原了人物 "</string>
+    <string name="str_info_has_stronged">"加强了人物 "</string>
+    <string name="str_sql_all_heroes">select HeroId, HeroName, Voiceover from Dict_Hero;</string>
+    <string name="str_sql_modified_heroes"><![CDATA[select HeroId, HeroName, Voiceover from Dict_Hero where (DefaultSTR+DefaultAGI+DefaultINT)>80.0;]]></string>
+    <string name="str_sql_origi_heroes"><![CDATA[select HeroId, HeroName, Voiceover from Dict_Hero where (DefaultSTR+DefaultAGI+DefaultINT)<80.0;]]></string>
+    <string name="str_sql_set_hero">update Dict_Hero set DefaultSTR=DefaultSTR*10000, DefaultAGI=DefaultAGI*10000, DefaultINT=DefaultINT*10000 where HeroId=</string>
+    <string name="str_sql_restore_hero">update Dict_Hero set DefaultSTR=DefaultSTR/10000, DefaultAGI=DefaultAGI/10000, DefaultINT=DefaultINT/10000 where HeroId=</string>
+    <string name="str_sql_raise_u_level">update Dict_Union_Lev set UninLevExp=\'3\';</string>
+    <string name="str_sql_shop_no_vip">update Dict_Module set ShowPLId=0, OpenPLId=0, ShowVLId=0, OpenVLId=0;</string>
+    <string name="str_sql_shop_no_lv">update Dict_Shop_Item set PLevLimit=0;</string>
+    <string name="str_sql_box_6">update Dict_Box_Drop_Type_45 set Denominator=BDTId;</string>
+    <string name="str_sql_box_5">update Dict_Denominator set DenominatorNum=5;</string>
+    <string name="str_sql_box_4">update Dict_Expedition_Box_Drop set ValNum=15,ValMaxNum=20,MinChargeOdds=EBDId,MaxChargeOdds=EBDId+1;</string>
+    <string name="str_sql_box_3">update Dict_Goods set NeedHeroLevel=0, ViewLev=1;</string>
+    <string name="str_sql_box_2">update Dict_Box_Drop_45 set MinChargeOdd=BDId, MaxChargeOdd=BDId+1;</string>
+    <string name="str_sql_box_1">update Dict_Gold_Finger_Odds set MinMolecule=GFOId, MaxMolecule=GFOId+1, Multiple=GFOId*1000;</string>
+    <string name="str_sql_mineral_no_lv">update Dict_Mineral set PLevLimit=0;</string>
+    <string name="str_sql_big_copy_no_lv">update Dict_BigCopy_Limit set ValNum=0.0;</string>
+    <string name="str_sql_copy_no_lv">update Dict_Copy_Limit set ValNum=0.0;</string>
+    <string name="str_sql_copy_no_vip">update Dict_Task set LimitPlayerlevel=0, IsVIPTask=0;</string>
+    <string name="str_sql_no_filter_words"><![CDATA[delete from Dict_FilterWords where Id<>2;]]></string>
+</resources>
